@@ -1,6 +1,6 @@
 body{
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #menu{
     position: fixed;
@@ -35,6 +35,7 @@ body{
 .raiz .salt .central > img{
     height: 100%;
     width: 50%;
+    object-fit: cover;
 }
 
 .raiz .salt .central .information{
@@ -114,7 +115,26 @@ body{
 }
 
 .raiz .salt .product_group > div:first-child{
+    display: flex;
+    flex-direction: column;
     background-color: mediumblue !important;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: #702C1E;
+}
+
+.raiz .salt .product_group > div:first-child > h1{
+    height: 35%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    background-color: magenta;
+}
+.raiz .salt .product_group > div:first-child > p{
+    background-color: lime;
+    width: 90%;
+    text-align: center;
 }
 
 .raiz .salt .product_group > div{
@@ -125,6 +145,7 @@ body{
     height: 100%;
     width: 20%;
     align-items: center;
+    border-radius: 10%;
 }
 
 .raiz .salt .product_group > div img{
@@ -218,6 +239,7 @@ body{
 .raiz .sweet .central > img{
     height: 100%;
     width: 50%;
+    object-fit: cover;
 }
 
 .raiz .sweet .central .information{
@@ -283,6 +305,102 @@ body{
     background: #F28E8F;
     border-radius: 30px;
     padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+
+.raiz .sweet .product_group{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 1%;
+    right: 20%;
+    background-color: brown;
+    height: 24vh;
+    width: 50%;
+}
+
+.raiz .sweet .product_group > div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: cyan;
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    border-radius: 10%;
+}
+
+.raiz .sweet .product_group > div img{
+    height: 60%;
+    width: 100%;
+    background-color: palevioletred;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.raiz .sweet .product_group > div > div{
+    width: 90%;
+    background-color: lime;
+    display: flex;
+    flex-direction: column;
+}
+
+.raiz .sweet .product_group > div > div h3{
+    font-family: 'Dancing Script', sans-serif;
+    color: #702C1E;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 2%;
+}
+
+.raiz .sweet .product_group > div > div p{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
+
+.raiz .sweet .product_group > div > div .time_product{
+    font-family: 'Dancing Script', sans-serif;
+    position: absolute;
+    background-color: #F28E8F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 21%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #000;
+    height: 20%;
+    border-radius: 50%;
+    line-height: 0.9;
+    left: 75%;
+    bottom: 30%;
+}
+
+.raiz .sweet .product_group > div:last-child{
+    display: flex;
+    flex-direction: column;
+    background-color: mediumblue !important;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: #702C1E;
+}
+
+.raiz .sweet .product_group > div:last-child > h1{
+    height: 35%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    background-color: magenta;
+}
+.raiz .sweet .product_group > div:last-child > p{
+    background-color: lime;
+    width: 90%;
+    text-align: center;
 }
 
 /* ... até aqui, dá para otimizar muito */
