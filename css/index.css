@@ -1,10 +1,39 @@
 body{
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 #menu{
     position: fixed;
     z-index: 1;
+}
+
+body > button{
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 8%;
+    height: 5%;
+    top: 50%;
+    background: #F28E8F;
+    border-radius: 30px 0px 0px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.seta_left{
+    /* background: blue; */
+    transform: rotateY(180deg);
+}
+
+.seta_right{
+    background-color: #E02C61;
+    right: 0px;
+}
+body > button img{
+    margin-left: 15%;
+    /* background-color: blue; */
 }
 
 .raiz{
@@ -12,6 +41,7 @@ body{
     background-color: red;
     height: 100vh;
     width: 200vw;
+    transform: translateX(-25%);
 }
 
 .raiz .salt{
@@ -233,6 +263,7 @@ body{
     background-color: blueviolet;
     height: 45vh;
     width: 40vw;
+    transform: translateX(100%)
 }
 
 
