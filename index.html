@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/principal.css">
+</head>
+
+<body>
+
+
+
+    <div class="raiz">
+        <div class="escondida"></div>
+        <div class="esquerda"></div>
+        <div class="botao" onclick="mover_esquerda()" ></div>
+        <!-- div central -->
+        <div class="centro"></div>
+        <!-- div clicavel -->
+        <div class="botao" onclick="mover_direita()" ></div>
+        <!-- div escondida -->
+        <div class="escondida"></div>
+    </div>
+
+    <script>
+        var raiz = document.querySelector(".raiz");
+        var esquerda = false;
+        var direita = false;
+        // var centro = true;
+
+        function mover_direita() {
+            if (!direita) {
+                raiz.classList.add("movendo_esquerda")
+                raiz.classList.remove("movendo_esq_centro")
+
+                raiz.classList.remove("movendo_direita")
+                raiz.classList.remove("movendo_dir_centro")
+
+                direita=true;
+            } else {
+                raiz.classList.add("movendo_esq_centro")
+                raiz.classList.remove("movendo_esquerda")
+
+                raiz.classList.remove("movendo_direita")
+                raiz.classList.remove("movendo_dir_centro")
+
+                direita=false;
+            }
+        }
+
+        function mover_esquerda() {
+            if (!esquerda) {
+                raiz.classList.add("movendo_direita")
+                raiz.classList.remove("movendo_dir_centro")
+
+                raiz.classList.remove("movendo_esq_centro")
+                raiz.classList.remove("movendo_esquerda")
+
+                esquerda=true;
+            } else {
+                raiz.classList.add("movendo_dir_centro")
+                raiz.classList.remove("movendo_direita")
+
+                raiz.classList.remove("movendo_esq_centro")
+                raiz.classList.remove("movendo_esquerda")
+
+                esquerda=false;
+            }
+        }
+    </script>
+
+</body>
+</html>

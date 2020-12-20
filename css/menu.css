@@ -1,0 +1,92 @@
+#menu{
+    display: flex;
+    flex: auto;
+    width: 100vw;
+    height: 15vh;
+    justify-content: space-around;
+    /* background-color: turquoise; */
+}
+
+#menu > div:first-child{
+    display: flex;
+    /* background-color: red; */
+    width: 50%;
+}
+
+
+#menu > div:first-child > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+    width: 100%;
+}
+
+#menu > div:first-child > div:first-child {
+    /* background-color: teal; */
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5%;
+}
+
+#menu > div:first-child > div:last-child ul {
+    /* background-color: turquoise; */
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#menu .logo{
+    /* background-color: green; */
+    width: 20%;
+}
+
+#menu .logo img{
+    position: absolute;
+    left: 43%;
+    max-width: 15%;
+}
+
+#menu ul{
+    list-style: none;
+    display: inline-flex;
+}
+
+#menu > div:last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: tomato; */
+    width: 50%;
+}
+
+#menu > div:last-child > div:last-child{
+    /* background-color: blue; */
+    padding: 0rem 2rem 0rem 2rem;
+    width: 30%;
+    margin-right: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+#menu > div:last-child > div:last-child button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+#menu > div:last-child > div:last-child button:last-child{
+    background-color: #F28E8F;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 45%;
+}
+#menu a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #702C1E;
+}

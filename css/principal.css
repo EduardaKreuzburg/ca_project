@@ -1,0 +1,108 @@
+body{
+    overflow: hidden;
+    background: #FFBDD0;
+}
+
+.raiz{
+    width: 200vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateX(-25%);
+    /* transform: translateX(20%); */
+    /* transform: translateX(-70%); */
+    
+}
+
+/* .esquerda{
+    position: absolute;
+    width: 100%;
+    height: 1062px;
+    /* left: -38px;
+    top: -38px; */
+
+    /* background: #FDF0F4;
+    
+} */ 
+
+.movendo_esquerda{
+    animation-name: movendo_p_esquerda;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+.movendo_direita{
+    animation-name: movendo_p_direita;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+.movendo_esq_centro{
+    animation-name: movendo_esq_p_centro;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+.movendo_dir_centro{
+    animation-name: movendo_dir_p_centro;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movendo_p_esquerda{
+    0%{
+        transform: translateX(-25%);
+    }
+    100%{
+        transform: translateX(-70%);    
+    }
+}
+
+@keyframes movendo_p_direita{
+    0%{
+        transform: translateX(-25%);
+    }
+    100%{
+        transform: translateX(20%);    
+    }
+}
+
+@keyframes movendo_esq_p_centro{
+    0%{
+        transform: translateX(-70%);    
+
+    }
+    100%{
+        transform: translateX(-25%);    
+    }
+}
+
+@keyframes movendo_dir_p_centro{
+    0%{
+        transform: translateX(20%);    
+
+    }
+    100%{
+        transform: translateX(-25%);    
+    }
+}
+
+.centro{
+    width: 20vw;
+    height: 33vh;
+    background-color: red;
+}
+
+.botao{
+    width: 6vw;
+    height: 5vh;
+    background-color: violet;
+    cursor: pointer;
+}
+
+.escondida{
+    width: 20vw;
+    height: 33vh;
+    background-color: blue;
+}
