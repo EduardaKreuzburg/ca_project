@@ -4,7 +4,7 @@ body{
     height: 100vh;
     background: #FDF0F4;
     /* background: red; */
-    background-image: url('../img/frame.svg');
+    background-image: url('../img/vec2.svg');
     background-repeat: no-repeat;
     background-size: 25% cover;
 }

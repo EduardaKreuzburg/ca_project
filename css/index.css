@@ -1,0 +1,288 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+#menu{
+    position: fixed;
+    z-index: 1;
+}
+
+.raiz{
+    display: flex;
+    background-color: red;
+    height: 100vh;
+    width: 200vw;
+}
+
+.raiz .salt{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    height: 100vh;
+    width: 100vw;
+}
+
+.raiz .salt .central{
+    display: flex;
+    background-color: blueviolet;
+    height: 45vh;
+    width: 40vw;
+}
+
+
+.raiz .salt .central > img{
+    height: 100%;
+    width: 50%;
+}
+
+.raiz .salt .central .information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    height: 100%;
+    width: 50%;
+}
+
+.raiz .salt .central .information div:first-child {
+    width: 80%;
+}
+
+.raiz .salt .central .information div:first-child h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #702C1E;
+    font-size: 30px;
+    font-size: 2.5rem !important;
+    /* background-color: #F28E8F; */
+}
+
+.raiz .salt .central .information div:first-child p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 1.1rem !important;
+    color: #000;
+   
+}
+
+.raiz .salt .central .information div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-bottom: 10%;
+    justify-content: space-between;
+}
+
+.raiz .salt .central .information div:nth-child(2) .time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 15px;
+    width: 16%;
+    background-color: #F28E8F;    
+    border-radius: 70%;
+    line-height: 0.9;
+}
+
+.raiz .salt .central .information div:nth-child(2) button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: #fff;
+    font-size: 15px;
+
+    background: #F28E8F;
+    border-radius: 30px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.raiz .salt .product_group{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 1%;
+    left: 20%;
+    background-color: brown;
+    height: 24vh;
+    width: 50%;
+}
+
+.raiz .salt .product_group > div:first-child{
+    background-color: mediumblue !important;
+}
+
+.raiz .salt .product_group > div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: cyan;
+    height: 100%;
+    width: 20%;
+    align-items: center;
+}
+
+.raiz .salt .product_group > div img{
+    height: 60%;
+    width: 100%;
+    background-color: palevioletred;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.raiz .salt .product_group > div > div{
+    width: 90%;
+    background-color: lime;
+    display: flex;
+    flex-direction: column;
+}
+
+.raiz .salt .product_group > div > div h3{
+    font-family: 'Dancing Script', sans-serif;
+    color: #702C1E;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 2%;
+}
+
+.raiz .salt .product_group > div > div p{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: normal;
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
+
+.raiz .salt .product_group > div > div .time_product{
+    font-family: 'Dancing Script', sans-serif;
+    position: absolute;
+    background-color: #F28E8F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 21%;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #000;
+    height: 20%;
+    border-radius: 50%;
+    line-height: 0.9;
+    left: 75%;
+    bottom: 30%;
+}
+
+.raiz .salt > img{
+    background-color: chartreuse;
+    position: absolute;
+    right: 0px;
+    height: 70%;
+}
+
+/* daqui até ... (há continuação logo abaixo) */
+
+.raiz .sweet{
+    background-color: blue;
+    height: 100vh;
+    width: 100vw;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* com exceção deste aqui abaixo */
+.raiz .sweet > img{
+    background-color: chartreuse;
+    position: absolute;
+    left: 0px;
+    height: 70%;
+}
+/* com exceção deste aqui acima */
+
+.raiz .sweet .central{
+    display: flex;
+    background-color: blueviolet;
+    height: 45vh;
+    width: 40vw;
+}
+
+
+.raiz .sweet .central > img{
+    height: 100%;
+    width: 50%;
+}
+
+.raiz .sweet .central .information{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    height: 100%;
+    width: 50%;
+}
+
+.raiz .sweet .central .information div:first-child {
+    width: 80%;
+}
+
+.raiz .sweet .central .information div:first-child h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #702C1E;
+    font-size: 30px;
+    font-size: 2.5rem !important;
+    /* background-color: #F28E8F; */
+}
+
+.raiz .sweet .central .information div:first-child p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 1.1rem !important;
+    color: #000;
+
+}
+
+.raiz .sweet .central .information div:nth-child(2){
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-bottom: 10%;
+    justify-content: space-between;
+}
+
+.raiz .sweet .central .information div:nth-child(2) .time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', sans-serif;
+    font-weight: 500;
+    color: #000;
+    font-size: 15px;
+    width: 16%;
+    background-color: #F28E8F;    
+    border-radius: 70%;
+    line-height: 0.9;
+}
+
+.raiz .sweet .central .information div:nth-child(2) button{
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    color: #fff;
+    font-size: 15px;
+
+    background: #F28E8F;
+    border-radius: 30px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+/* ... até aqui, dá para otimizar muito */

@@ -7,6 +7,10 @@
     /* background-color: turquoise; */
 }
 
+#menu > div .icons{
+    /* cursor: pointer; */
+}
+
 #menu > div:first-child{
     display: flex;
     /* background-color: red; */
@@ -44,7 +48,7 @@
 #menu .logo img{
     position: absolute;
     left: 43%;
-    max-width: 15%;
+    max-width: 13%;
 }
 
 #menu ul{
@@ -75,13 +79,13 @@
 }
 #menu > div:last-child > div:last-child button:last-child{
     background-color: #F28E8F;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: #ffffff;
     cursor: pointer;
-    border-radius: 45%;
+    border-radius: 45px;
 }
 #menu a{
     text-decoration: none;

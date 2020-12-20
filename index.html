@@ -3,72 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/principal.css">
+    <title>ChocoAme</title>
+    <!-- <link rel="stylesheet" href="./css/principal.css"> -->
+    <link rel="icon" href="./img/logo.png">
+
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- <link rel="stylesheet" href="./css/encomendas.css"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <nav id="menu">
+        <div>
+            <div class="icons">
+               <img onclick="window.open('https:\/\/facebook.com/chocoame')" src="./img/facebook.svg" alt="">
+                <img onclick="window.open('https:\/\/instagram.com/chocoamegourmet')" src="./img/instagram.svg" alt="">
+                <img onclick="window.open('https:\/\/api.whatsapp.com/send?phone=5551989486114&text=Tenho%20interesse%20em%20um%20item!')" src="./img/whatsapp.svg" alt="">
+            </div>
 
+            <div>
+                <ul>
+                    <li> <a href="index.html">PRODUTOS</a> </li>
+                    <li> <a href="encomendas.html">ENCOMENDAS</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="logo"> <a href="index.html"><img src="./img/logo.svg" alt="" sizes="50%"></a> </div>
+
+        <div>
+            <div>
+                <ul>
+                    <li> <a href="contato.html">CONTATO</a> </li>
+                </ul>
+            </div>
+            
+            <div>
+                <button><img src="./img/car.svg" alt=""></button>
+                <button>LOGIN</button>
+            </div>
+
+        </div>
+    </nav>
 
 
     <div class="raiz">
-        <div class="escondida"></div>
-        <div class="esquerda"></div>
-        <div class="botao" onclick="mover_esquerda()" ></div>
-        <!-- div central -->
-        <div class="centro"></div>
-        <!-- div clicavel -->
-        <div class="botao" onclick="mover_direita()" ></div>
-        <!-- div escondida -->
-        <div class="escondida"></div>
+        <div class="salt">
+
+            <div class="central">
+                <img src="./img/waffle.svg" alt="">
+                <div class="information">
+                    <div>
+                        <h2>Waffles</h2>
+                        <p>2 Waffles com cobertura 
+                            de caramelo com 
+                            pedaços de morango e 
+                            chatininho</p>
+                    </div>
+                    <div>
+                        <div class="time"> <b>30</b> <small>min</small> </div>
+                        <button>Comprar <img src="" alt=""> </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product_group">
+                <div>
+                    <h1>+</h1>
+                    <p>Adicionar mais produtos</p>
+                </div>
+
+                <div>
+                    <img src="./img/redvelvet.svg" alt="">
+                    <div>
+                        <h3>Red bolão</h3>
+                        <p>Red Velvet Cake 16 fatias</p>
+                        <div class="time_product"> <b>30</b> <small>min</small> </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./img/redvelvet.svg" alt="">
+                    <div>
+                        <h3>Red bolão</h3>
+                        <p>Red Velvet Cake 16 fatias</p>
+                        <div class="time_product"> <b>30</b> <small>min</small> </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="./img/redvelvet.svg" alt="">
+                    <div>
+                        <h3>Red bolão</h3>
+                        <p>Red Velvet Cake 16 fatias</p>
+                        <div class="time_product"> <b>30</b> <small>min</small> </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <img src="./img/torta.svg" alt="">
+            
+        </div>
+        
+        <div class="sweet">
+
+            <img src="./img/donnut.svg" alt="">
+
+            <div class="central">
+                <img src="./img/waffle.svg" alt="">
+                <div class="information">
+                    <div>
+                        <h2>Waffles</h2>
+                        <p>2 Waffles com cobertura 
+                            de caramelo com 
+                            pedaços de morango e 
+                            chatininho</p>
+                    </div>
+                    <div>
+                        <div class="time"> <b>30</b> <small>min</small> </div>
+                        <button>Comprar <img src="" alt=""> </button>
+                    </div>
+                </div>
+            </div>     
+        </div>
     </div>
 
-    <script>
-        var raiz = document.querySelector(".raiz");
-        var esquerda = false;
-        var direita = false;
-        // var centro = true;
-
-        function mover_direita() {
-            if (!direita) {
-                raiz.classList.add("movendo_esquerda")
-                raiz.classList.remove("movendo_esq_centro")
-
-                raiz.classList.remove("movendo_direita")
-                raiz.classList.remove("movendo_dir_centro")
-
-                direita=true;
-            } else {
-                raiz.classList.add("movendo_esq_centro")
-                raiz.classList.remove("movendo_esquerda")
-
-                raiz.classList.remove("movendo_direita")
-                raiz.classList.remove("movendo_dir_centro")
-
-                direita=false;
-            }
-        }
-
-        function mover_esquerda() {
-            if (!esquerda) {
-                raiz.classList.add("movendo_direita")
-                raiz.classList.remove("movendo_dir_centro")
-
-                raiz.classList.remove("movendo_esq_centro")
-                raiz.classList.remove("movendo_esquerda")
-
-                esquerda=true;
-            } else {
-                raiz.classList.add("movendo_dir_centro")
-                raiz.classList.remove("movendo_direita")
-
-                raiz.classList.remove("movendo_esq_centro")
-                raiz.classList.remove("movendo_esquerda")
-
-                esquerda=false;
-            }
-        }
-    </script>
+    <script></script>
 
 </body>
 </html>
