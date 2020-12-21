@@ -22,7 +22,7 @@
     <nav id="menu">
         <div>
             <div class="icons">
-               <img onclick="window.open('https:\/\/facebook.com/chocoame')" src="./img/facebook.svg" alt="">
+                <img onclick="window.open('https:\/\/facebook.com/chocoame')" src="./img/facebook.svg" alt="">
                 <img onclick="window.open('https:\/\/instagram.com/chocoamegourmet')" src="./img/instagram.svg" alt="">
                 <img onclick="window.open('https:\/\/api.whatsapp.com/send?phone=5551989486114&text=Tenho%20interesse%20em%20um%20item!')" src="./img/whatsapp.svg" alt="">
             </div>
@@ -45,8 +45,8 @@
             </div>
             
             <div>
-                <button><img src="./img/car.svg" alt=""></button>
-                <button>LOGIN</button>
+                <button><img src="./img/car.svg" onclick="window.open('https:\/\/api.whatsapp.com/send?phone=5551989486114&text=Tenho%20interesse%20em%20um%20item!')" alt=""></button>
+                <button> <a href="login.html">LOGIN</a></button>
             </div>
 
         </div>
@@ -64,18 +64,16 @@
         <div class="salt">
 
             <div class="central">
-                <img src="./img/waffle.svg" alt="">
+                <!-- <img src="./img/empadao.jpg" alt=""> -->
+                <video src="./video/empadao.mp4"></video>
                 <div class="information">
                     <div>
-                        <h2>Waffles</h2>
-                        <p>2 Waffles com cobertura 
-                            de caramelo com 
-                            pedaços de morango e 
-                            chatininho</p>
+                        <h2>Empadão</h2>
+                        <p>Deliciosa torta de frango com queijo catupiry</p>
                     </div>
                     <div>
-                        <div class="time"> <b>30</b> <small>min</small> </div>
-                        <button>Comprar <img src="" alt=""> </button>
+                        <div class="time"> <b>60</b> <small>min</small> </div>
+                        <button> <a href="https://api.whatsapp.com/send?phone=5551989486114&text=Tenho%20interesse%20em%20um%20item!">Comprar</a></button>
                     </div>
                 </div>
             </div>
@@ -87,54 +85,59 @@
                 </div>
 
                 <div>
-                    <img src="./img/redvelvet.svg" alt="">
+                    <img onclick="changeMainProduct(event, 0)" src="./img/minipizza2.svg" alt="">
                     <div>
-                        <h3>Red bolão</h3>
-                        <p>Red Velvet Cake 16 fatias</p>
+                        <h3>Mini Pizza</h3>
+                        <p>10 mini pizzas, nos sabores: calabresa e frango</p>
+                        <div class="time_product"> <b>90</b> <small>min</small> </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img onclick="changeMainProduct(event, 0)" src="./img/paodequeijo.svg" alt="">
+                    <div>
+                        <h3>Pão de queijo</h3>
+                        <p>6 unidades de pão de queijo quentinho</p>
                         <div class="time_product"> <b>30</b> <small>min</small> </div>
                     </div>
                 </div>
 
                 <div>
-                    <img src="./img/redvelvet.svg" alt="">
+                    <img onclick="changeMainProduct(event, 0)" src="./img/empadao.jpg" alt="">
                     <div>
-                        <h3>Red bolão</h3>
-                        <p>Red Velvet Cake 16 fatias</p>
-                        <div class="time_product"> <b>30</b> <small>min</small> </div>
-                    </div>
-                </div>
-
-                <div>
-                    <img src="./img/redvelvet.svg" alt="">
-                    <div>
-                        <h3>Red bolão</h3>
-                        <p>Red Velvet Cake 16 fatias</p>
-                        <div class="time_product"> <b>30</b> <small>min</small> </div>
+                        <h3>Empadão</h3>
+                        <p>Deliciosa torta de frango com queijo catupiry</p>
+                        <div class="time_product"> <b>60</b> <small>min</small> </div>
                     </div>
                 </div>
             </div>
 
             <img src="./img/torta.svg" alt="">
+            <img src="./img/seta.svg" class="seta_esq" alt="">
             
         </div>
+
+        <img src="./img/chooseyourside.png" class="choose" alt="">
         
         <div class="sweet">
 
             <img src="./img/donnut.svg" alt="">
+            <img src="./img/seta_right.svg" class="seta_dir" alt="">
 
             <div class="central">
-                <img src="./img/waffle.svg" alt="">
+                <!-- <img src="./img/waffle.svg" alt=""> -->
+                <video src="./video/waffle.mp4"></video>
                 <div class="information">
                     <div>
                         <h2>Waffles</h2>
                         <p>2 Waffles com cobertura 
                             de caramelo com 
                             pedaços de morango e 
-                            chatininho</p>
+                            chatininho </p>
                     </div>
                     <div>
                         <div class="time"> <b>30</b> <small>min</small> </div>
-                        <button>Comprar <img src="" alt=""> </button>
+                        <button><a href="https://api.whatsapp.com/send?phone=5551989486114&text=Tenho%20interesse%20em%20um%20item!">Comprar</a></button>
                     </div>
                 </div>
             </div>     
@@ -142,29 +145,33 @@
             <div class="product_group">
 
                 <div>
-                    <img src="./img/redvelvet.svg" alt="">
+                    <img onclick="changeMainProduct(event, 1)" src="./img/brownie.svg" alt="">
                     <div>
-                        <h3>Red bolão</h3>
-                        <p>Red Velvet Cake 16 fatias</p>
-                        <div class="time_product"> <b>30</b> <small>min</small> </div>
+                        <h3>Brownies</h3>
+                        <p>9 brownies com cobertura de chocolate e confeites variados</p>
+                        <div class="time_product"> <b>60</b> <small>min</small> </div>
                     </div>
                 </div>
 
                 <div>
-                    <img src="./img/redvelvet.svg" alt="">
+                    <img onclick="changeMainProduct(event, 1)" src="./img/waffle.svg" alt="">
                     <div>
-                        <h3>Red bolão</h3>
-                        <p>Red Velvet Cake 16 fatias</p>
-                        <div class="time_product"> <b>30</b> <small>min</small> </div>
+                        <h3>Waffles</h3>
+                        <p>2 Waffles com cobertura 
+                            de caramelo com 
+                            pedaços de morango e 
+                            chatininho
+                        </p>
+                        <div class="time_product"> <b>60</b> <small>min</small> </div>
                     </div>
                 </div>
 
                 <div>
-                    <img src="./img/redvelvet.svg" alt="">
+                    <img onclick="changeMainProduct(event, 1)" src="./img/redvelvet.svg" alt="">
                     <div>
-                        <h3>Red bolão</h3>
-                        <p>Red Velvet Cake 16 fatias</p>
-                        <div class="time_product"> <b>30</b> <small>min</small> </div>
+                        <h3>Red Velvet</h3>
+                        <p>Red Velvet Cake 16 fatias com recheio de chatininho</p>
+                        <div class="time_product"> <b>90</b> <small>min</small> </div>
                     </div>
                 </div>
 

@@ -14,7 +14,7 @@ body > button{
     justify-content: flex-start;
     align-items: center;
     width: 8%;
-    height: 5%;
+    height: 7%;
     top: 50%;
     background: #F28E8F;
     border-radius: 30px 0px 0px 30px;
@@ -38,10 +38,20 @@ body > button img{
 
 .raiz{
     display: flex;
-    background-color: red;
+    position: relative;
+    background-color: #fff;
     height: 100vh;
     width: 200vw;
     transform: translateX(-25%);
+}
+
+.raiz .choose{
+    position: absolute;
+    left: 44%;
+    top: 20%;
+    z-index: 5;
+    /* width: 49; */
+    height: 23%;
 }
 
 .raiz .salt{
@@ -49,23 +59,27 @@ body > button img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: yellow;
+    background-color: #FDF0F4;
     height: 100vh;
     width: 100vw;
 }
 
 .raiz .salt .central{
     display: flex;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     height: 45vh;
     width: 40vw;
+    transform: translateX(-100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
 }
 
 
-.raiz .salt .central > img{
+.raiz .salt .central > video{
     height: 100%;
     width: 50%;
     object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
 }
 
 .raiz .salt .central .information{
@@ -73,7 +87,9 @@ body > button img{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    background-color: #fff;
+    border-radius: 0 1rem 1rem 0;
+    /*  */
     height: 100%;
     width: 50%;
 }
@@ -121,6 +137,10 @@ body > button img{
     border-radius: 70%;
     line-height: 0.9;
 }
+.raiz .salt .central .information div:nth-child(2) a{
+    text-decoration: none;
+    color: white;
+}
 
 .raiz .salt .central .information div:nth-child(2) button{
     font-family: 'Poppins', sans-serif;
@@ -139,7 +159,8 @@ body > button img{
     position: absolute;
     bottom: 1%;
     left: 20%;
-    background-color: brown;
+    background-color: #FDF0F4;
+    border-radius: 10px;
     height: 24vh;
     width: 50%;
 }
@@ -147,9 +168,12 @@ body > button img{
 .raiz .salt .product_group > div:first-child{
     display: flex;
     flex-direction: column;
-    background-color: mediumblue !important;
+    background-color: #FDF0F4 !important;
+    border: 3px solid #702C1E;
+    box-sizing: border-box;
+    border-radius: 10px;
     font-family: 'Dancing Script', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     justify-content: center;
     align-items: center;
     color: #702C1E;
@@ -159,10 +183,10 @@ body > button img{
     height: 35%;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    background-color: magenta;
+    /* background-color: magenta; */
 }
 .raiz .salt .product_group > div:first-child > p{
-    background-color: lime;
+    /* background-color: lime; */
     width: 90%;
     text-align: center;
 }
@@ -171,11 +195,13 @@ body > button img{
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: cyan;
+    background-color: white;
     height: 100%;
     width: 20%;
     align-items: center;
     border-radius: 10%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .raiz .salt .product_group > div img{
@@ -187,9 +213,10 @@ body > button img{
 }
 .raiz .salt .product_group > div > div{
     width: 90%;
-    background-color: lime;
+    /* background-color: lime; */
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .raiz .salt .product_group > div > div h3{
@@ -206,7 +233,12 @@ body > button img{
     color: #000;
     font-weight: normal;
     font-size: 0.8rem;
-    line-height: 1.2;
+    line-height: 1;
+    overflow: auto;
+}
+
+.raiz .salt .product_group > div > div p::-webkit-scrollbar{
+    display: none;
 }
 
 .raiz .salt .product_group > div > div .time_product{
@@ -229,16 +261,26 @@ body > button img{
 }
 
 .raiz .salt > img{
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     position: absolute;
     right: 0px;
     height: 70%;
 }
 
+.raiz .salt .seta_esq{
+    position: absolute;
+    width: 9rem;
+    height: 6rem;
+    right: 13%;
+    top: 80%;
+}
+
 /* daqui até ... (há continuação logo abaixo) */
 
+/*outro lado*/
+
 .raiz .sweet{
-    background-color: blue;
+    background-color: #FFBDD0;
     height: 100vh;
     width: 100vw;
 
@@ -251,26 +293,37 @@ body > button img{
 
 /* com exceção deste aqui abaixo */
 .raiz .sweet > img{
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     position: absolute;
     left: 0px;
     height: 70%;
+}
+
+.raiz .sweet .seta_dir{
+    position: absolute;
+    width: 9rem;
+    height: 6rem;
+    left: 13%;
+    top: 80%;
 }
 /* com exceção deste aqui acima */
 
 .raiz .sweet .central{
     display: flex;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     height: 45vh;
     width: 40vw;
-    transform: translateX(100%)
-}
+    transform: translateX(100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+} 
 
 
-.raiz .sweet .central > img{
+.raiz .sweet .central > video{
     height: 100%;
     width: 50%;
     object-fit: cover;
+    border-radius: 1rem 0 0 1rem;
 }
 
 .raiz .sweet .central .information{
@@ -278,9 +331,11 @@ body > button img{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: red;
+    background-color: #fff;
     height: 100%;
     width: 50%;
+    border-radius: 0 1rem 1rem 0;
+    
 }
 
 .raiz .sweet .central .information div:first-child {
@@ -327,6 +382,11 @@ body > button img{
     line-height: 0.9;
 }
 
+.raiz .sweet .central .information div:nth-child(2) a{
+text-decoration: none;
+color: white;
+}
+
 .raiz .sweet .central .information div:nth-child(2) button{
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
@@ -345,7 +405,7 @@ body > button img{
     position: absolute;
     bottom: 1%;
     right: 20%;
-    background-color: brown;
+    /* background-color: #702C1E; */
     height: 24vh;
     width: 50%;
 }
@@ -354,11 +414,12 @@ body > button img{
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: cyan;
+    background-color: #fff;
     height: 100%;
     width: 20%;
     align-items: center;
     border-radius: 10%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .raiz .sweet .product_group > div img{
@@ -370,9 +431,10 @@ body > button img{
 }
 .raiz .sweet .product_group > div > div{
     width: 90%;
-    background-color: lime;
+    /* background-color: lime; */
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .raiz .sweet .product_group > div > div h3{
@@ -389,7 +451,13 @@ body > button img{
     color: #000;
     font-weight: normal;
     font-size: 0.8rem;
-    line-height: 1.2;
+    line-height: 1;
+    overflow: auto;
+  
+}
+
+.raiz .sweet .product_group > div > div p::-webkit-scrollbar{
+    display: none;
 }
 
 .raiz .sweet .product_group > div > div .time_product{
@@ -414,22 +482,25 @@ body > button img{
 .raiz .sweet .product_group > div:last-child{
     display: flex;
     flex-direction: column;
-    background-color: mediumblue !important;
+    background-color: #FFBDD0 !important;
     font-family: 'Dancing Script', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     justify-content: center;
     align-items: center;
     color: #702C1E;
-}
+    border: 3px solid #702C1E;
+    box-sizing: border-box;
+    border-radius: 10px
+}/*AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII*/
 
 .raiz .sweet .product_group > div:last-child > h1{
     height: 35%;
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    background-color: magenta;
+    /* background-color: magenta; */
 }
 .raiz .sweet .product_group > div:last-child > p{
-    background-color: lime;
+    /* background-color: lime; */
     width: 90%;
     text-align: center;
 }

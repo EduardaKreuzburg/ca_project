@@ -1,0 +1,121 @@
+body{
+    position: relative;
+    width: 100vw;
+    /* height: 100vh; */
+    background: #FDF0F4;
+    /* background-size: 25% cover; */
+}
+
+body::before{
+    content: "";
+    background-image: url('../img/vec2.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    transform: rotate(180deg);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    min-height: 100%;
+    height: 80vh;
+}
+.modal{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: clamp(425px, 50vh, 50vh);
+    margin-left: 8%;
+    background: #FCFCFC;
+    border: 1px solid rgba(242, 142, 143, 0.56);
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 55vh;
+}
+
+.modal-form h2{
+    background: -webkit-linear-gradient(#f28e8f, #e02c61);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1rem 0 2rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.modal-form p{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+    text-align: center;
+    /* background-color: red; */
+}
+
+.modal-form .form_group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 70%;
+    height: 40%;
+    margin-bottom: 1rem;
+    
+}
+
+.modal-form .form_group input{
+    padding: 1rem;
+    /* background-color: blue; */
+    /* flex: 1; */
+    width: 100%;
+    height: 30%;
+    margin-bottom: 1rem;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.modal-form .form_group small{
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-form button{
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+    background: linear-gradient(178.18deg, #F28E8F -13.56%, #FD749B 158.3%);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.modal-form small{
+    font-family: 'Poppins', sans-serif;
+}
+
+.seta{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 170px;
+    height: 50px;
+    background: #F28E8F;
+    border-radius: 30px 0px 0px 30px;
+    border: none;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.seta img{
+    margin-left: 15%;
+}
+
+
+

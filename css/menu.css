@@ -7,8 +7,8 @@
     /* background-color: turquoise; */
 }
 
-#menu > div .icons{
-    /* cursor: pointer; */
+#menu > div:first-child > div:first-child img{
+    cursor: pointer;
 }
 
 #menu > div:first-child{
